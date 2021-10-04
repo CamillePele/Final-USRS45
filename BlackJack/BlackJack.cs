@@ -121,7 +121,7 @@ namespace BlackJack
                 Console.WriteLine("Dommage, vous avez dépassé les 21 points");
             } else if (SommeJoueur(joueurO, dict) == 21) {
                 Console.WriteLine("Dommage, l'ordinateur a 21 points !");
-            } if (SommeJoueur(joueurO, dict) > 21) {
+            } else if (SommeJoueur(joueurO, dict) > 21) {
                 Console.WriteLine("Bravo, l'ordinateur a dépassé les 21 points");
             } else if (SommeJoueur(joueurH, dict) > SommeJoueur(joueurO, dict)) {
                 Console.WriteLine("Bravo, vous avez gagné avec {0}, l'ordinateur avait {1}", SommeJoueur(joueurH, dict), SommeJoueur(joueurO, dict));
